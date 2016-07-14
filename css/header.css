@@ -1,0 +1,33 @@
+header{
+	width:auto;
+	height:200px;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	margin-top:30px;
+}
+
+header #menu{
+	width:auto;
+	margin:0 auto;
+}
+
+header #menu li{
+	display: block;
+	float: left;
+	width: 120px;
+	height: 10px;
+}
+
+header #menu a {
+	color: black;
+	display: block;
+	line-height: 1.0:
+	padding: 6px 0;
+	border-left: 1px solid black;
+	text-align: center;
+	text-decoration: none;
+}
+
+header #menu #last{
+	border-right: 1px solid black;
+}
