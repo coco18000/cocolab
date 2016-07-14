@@ -1,0 +1,68 @@
+body{
+
+}
+#page{
+	width: 1000px;
+	margin: 0 auto;
+}
+#main{
+	width:auto;
+	height:300px;
+	background-color: red;
+}
+header{
+	width:auto;
+	height:200px;
+	background-color: black;
+}
+footer{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width:auto;
+	height:300px;
+	background-color: black;
+}
+footer #contents{
+	float: left;
+	width:69%;
+	height:90%;
+	margin-top: 10px;
+	background-color: red;
+}
+footer #contents h3{
+	text-align: center;
+	border-bottom: solid 1px black;
+}
+footer #contents .left{
+	float:left;
+	width:66%;
+}
+footer #contents #Page{
+	background-color: rgb(200,200,200);
+	margin: 0 auto;
+	float:left;
+	width:50%;
+}
+footer #contents #Research{
+		background-color: rgb(100,100,100);
+	margin: 0 auto;
+	float:right;
+	width:50%;
+}
+footer #contents .right{
+	background-color: rgb(50,50,50);
+	margin: 0 auto;
+	float:left;
+	width:33%;
+}
+footer #contents #Study{
+	width:70%;
+	background-color: rgb(100,100,100);
+}
+footer #SNS{
+	float:right;
+	width:30%;
+	height:90%;
+	margin-top: 10px;
+	background-color: blue;
+}
