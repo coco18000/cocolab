@@ -20,44 +20,63 @@ footer{
 	margin-bottom: 100px;
 	width:auto;
 	height:300px;
-	background-color: black;
+	//background-color: black;
+	border-bottom: solid 1px black;
 }
 footer #contents{
 	float: left;
 	width:69%;
 	height:90%;
 	margin-top: 10px;
-	background-color: red;
+	//background-color: red;
 }
 footer #contents h3{
+	font-size: 18px;
 	text-align: center;
 	border-bottom: solid 1px black;
+	padding-bottom: 15px;
 }
-footer #contents .left{
+footer #contents li{
+	font-size: 15px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+footer #contents li:hover{
+	text-decoration: underline;
+}
+
+footer #contents #left1{
 	float:left;
-	width:66%;
+	width: 67%;
 }
-footer #contents #Page{
-	background-color: rgb(200,200,200);
-	margin: 0 auto;
+footer #contents #left2{
 	float:left;
-	width:50%;
+	width: 50%;
 }
-footer #contents #Research{
-		background-color: rgb(100,100,100);
-	margin: 0 auto;
+footer #contents #right1{
+	float:right;
+	width:33%;
+}
+footer #contents #right2{
 	float:right;
 	width:50%;
 }
-footer #contents .right{
-	background-color: rgb(50,50,50);
-	margin: 0 auto;
-	float:left;
-	width:33%;
+
+footer #contents #Page{
+	//background-color: rgb(200,200,200);
+	width:85%;
+	margin:0 auto;
 }
+footer #contents #Research{
+	//background-color: rgb(100,100,100);
+	width:85%;
+	margin:0 auto;
+}
+
 footer #contents #Study{
-	width:70%;
-	background-color: rgb(100,100,100);
+	//background-color: rgb(50,50,50);
+	width:85%;
+	margin:0 auto;
 }
 footer #SNS{
 	float:right;
