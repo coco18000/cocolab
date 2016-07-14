@@ -16,8 +16,8 @@ header{
 	background-color: black;
 }
 footer{
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 80px;
+	margin-bottom: 30px;
 	width:auto;
 	height:300px;
 	border-bottom: solid 1px black;
@@ -141,3 +141,5 @@ footer #SNS #nico{
 	width: 64px;
 }
 
+footer #copyright > p{
+}
