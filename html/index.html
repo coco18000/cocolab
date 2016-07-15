@@ -12,34 +12,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script type="text/javascript" src="../js/index.js"></script>
+
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <link href="../css/index.css" rel="stylesheet" />
     <link href="../css/header.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
-    <title>ここらぼ！</title>
+    <title>CocoLab.</title>
 </head>
 <body id="topPage">
     <div id="page">
         <header>
-            <div id="title"></div><!--title-->
             <div id="menu">
                 <ul>
-                    <li><a href="#">TOP</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Study</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#" id="last">Contact</a></li>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="study.html">Study</a></li>
+                    <li><a href="link.html">Link</a></li>
+                    <li><a href="contact.html" id="last">Contact</a></li>
                 </ul>
             </div><!--menu-->
+
+            <div id="title">
+                <h1><a href="index.html">CocoLab.</a></h1>
+            </div><!--title-->
         </header>
 
 
 
         <div id="main">
-        <div id="top_img">
-            <h1>Welcom to my Lab!</h1>
-        </div><!--top_img-->
+            <div id="top_img">
+                <h1>Welcom to my Laboratory!</h1>
+                <div id="canvas">
+                <canvas id="Aquarium">a</canvas>
+                </div><!--canvas-->
+            </div><!--top_img-->
 
 
             <div id="games">
@@ -59,14 +66,25 @@
                 <div id="tab">
                     <div id="update_menu">
                         <h3>Update History</h3>
-                        <ul>
-                            <li>All Update</li>
-                            <li>Research Update</li>
-                            <li>Study Update</li>
+                        <ul id="tabs">
+                            <li><a href="#tab01">All Update</a></li>
+                            <li><a href="#tab02">Research Update</a></li>
+                            <li><a href="#tab03">Study Update</a></li>
                         </ul>
                     </div><!--update_menu-->
                 </div><!--tab-->
-                <div id="message_window"></div><!--message_window-->
+                <div id="message_window">
+                    <div id="tab01" class="panel">
+                        <p>tab1</p>
+                    </div><!--tab01-->
+                    <div id="tab02" class="panel">
+                        <p>tab2</p>
+                    </div><!--tab02-->
+                    <div id="tab03" class="panel">
+                        <p>tab3</p>
+                    </div><!--tab03-->
+
+                </div><!--message_window-->
             </div><!--update-->
         </div><!--main-->
 

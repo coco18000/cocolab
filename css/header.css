@@ -31,3 +31,19 @@ header #menu a {
 header #menu #last{
 	border-right: 1px solid black;
 }
+
+header #title{
+	margin-top: 150px;
+	//border:solid 1px black;
+}
+header #title a{
+	margin-left:auto;
+	margin-right: 30px;
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 45px;
+	width:208px;
+
+	//border:solid 1px black;
+}

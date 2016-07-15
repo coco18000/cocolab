@@ -15,12 +15,22 @@ body{
 #top_img{
 	padding-top: 20px;
 	height:450px;
-	width:300px;
+	width:1000px;
 	margin: 0 auto;
 }
 #top_img h1{
 	text-align: center;
 	font-size: 30px;
+}
+
+#top_img #Aquarium{
+	width: 450px;
+	height: 300px;
+}
+#top_img #canvas{
+	width: 450px;
+	height: 300px;
+	margin:0 auto;
 }
 
 #games{
@@ -63,11 +73,15 @@ body{
 	width:90px;
 	height:32px;
 	float:left;
-	font-size: 17px
+	font-size: 17px;
 	color: black;
 	text-align: center;
 	text-decoration: none;
-	line-height: 1.0:
+	line-height: 2.0;
+	margin-top: 98px;
+}
+#games #gicon > a:hover{
+	text-decoration:underline;
 }
 
 #update{
@@ -105,4 +119,11 @@ body{
 	width:69%;
 	height :250px;
 	//background-color: blue;
+}
+
+
+.panel{
+	clear: both;
+	overflow: auto;
+	margin:0 auto;
 }
