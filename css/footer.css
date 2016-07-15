@@ -1,5 +1,5 @@
 footer{
-	margin-top: 80px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	width:auto;
 	height:300px;
@@ -19,14 +19,10 @@ footer #contents h3{
 }
 
 footer #contents li{
-		padding-bottom: 7px;
+	padding-bottom: 7px;
 	padding-top: 7px;
 
-}/*
-footer #contents li:hover{
-	font-size: 18px;
-	text-decoration: underline;
-}*/
+}
 
 footer #contents a{
 

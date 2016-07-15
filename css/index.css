@@ -6,6 +6,103 @@ body{
 	margin: 0 auto;
 }
 #main{
+	margin-top:30px;
+	margin-bottom: 30px
 	width:auto;
-	height:300px;
+	height:auto;
+}
+
+#top_img{
+	padding-top: 20px;
+	height:450px;
+	width:300px;
+	margin: 0 auto;
+}
+#top_img h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+#games{
+	width: 800px;
+	height:220px;
+	margin:0 auto;
+	margin-bottom: 10px;
+	//border:solid 1px black;
+}
+#games h2{
+	font-size: 20px;
+	text-align: center;
+	width:180px;
+	padding-bottom: 10px;
+	margin-left:-40px;
+	border-bottom: solid 1px black
+}
+
+#games li{
+	margin-right: 32px;
+	display: block;
+	float: left;
+	width: 128px;
+	height:128px;
+	border:solid 1px black;
+	border-radius: 30px;
+}
+
+#games li a{
+	color: black;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+		width: 128px;
+	height:128px;
+}
+
+#games #gicon > a{
+	display: block;
+	width:90px;
+	height:32px;
+	float:left;
+	font-size: 17px
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.0:
+}
+
+#update{
+	width:auto;
+	height :250px;
+	border-top:solid 1px black;
+	border-bottom: solid 1px black;
+}
+#update #tab{
+	margin-top: 20px;
+	float:left;
+	width:30%;
+	height :200px;
+	border-right: solid 1px black;
+}
+#tab #update_menu{
+	width:90%;
+	margin:0 auto;
+}
+#tab #update_menu h3{
+	font-size: 20px;
+	margin:0 auto;
+	text-align: center;
+	width:180px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: solid 1px black
+}
+#tab #update_menu li{
+	list-style: none;
+}
+
+#update #message_window{
+	float:right;
+	width:69%;
+	height :250px;
+	//background-color: blue;
 }
