@@ -28,6 +28,7 @@ body{
 	height: 300px;
 }
 #top_img #canvas{
+	margin-top:20px;
 	width: 450px;
 	height: 300px;
 	margin:0 auto;
