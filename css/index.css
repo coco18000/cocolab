@@ -22,14 +22,9 @@ body{
 	text-align: center;
 	font-size: 30px;
 }
-
-#top_img #Aquarium{
-	width: 450px;
-	height: 300px;
-}
 #top_img #canvas{
 	margin-top:20px;
-	width: 450px;
+	width: 900px;
 	height: 300px;
 	margin:0 auto;
 }

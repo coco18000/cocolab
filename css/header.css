@@ -9,7 +9,6 @@ header{
 header #menu{
 	margin-left:15px;
 	width:auto;
-	//margin:0 auto;
 }
 
 header #menu li{
@@ -27,7 +26,7 @@ header #menu a {
 	display: block;
 	line-height: 1.0;
 	padding: 6px 0;
-	border-left: 1px solid black;
+/*	border-left: 1px solid black;*/
 	text-align: center;
 	text-decoration: none;
 }
@@ -50,12 +49,11 @@ header #menu .now{
 }
 
 header #menu #last{
-	border-right: 1px solid black;
+/*	border-right: 1px solid black;*/
 }
 
 header #title{
 	margin-top: 150px;
-	//border:solid 1px black;
 }
 header #title a{
 	margin-left:auto;
@@ -65,6 +63,4 @@ header #title a{
 	color: black;
 	font-size: 45px;
 	width:208px;
-
-	//border:solid 1px black;
 }
