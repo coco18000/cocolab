@@ -23,6 +23,7 @@ var my_bar;
 var my_ball;
 var my_block = [];
 var SPEED = 2;
+var BALL_SPEED = 8;
 //---------------------------------------------------------//
 //----------------------メインループ------------------------//
 //---------------------------------------------------------//
@@ -148,6 +149,8 @@ bar.prototype.Collision = function(ball){
 	if(this.x - (this.size/2) <= ball.x && this.x + (this.size/2) >= ball.x && this.y >= ball.y && this.y <= ball.y+ball.size){
 		ball.vel.y *= -1;
 		ball.y = this.y - ball.size;
+		ball.vel.x += (ball.x-this.x)/40;
+		ball.vel.y = (ball.vel.y/Math.abs(ball.vel.y))*Math.sqrt(BALL_SPEED-(ball.vel.x*ball.vel.x));
 	}
 }
 
