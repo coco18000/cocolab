@@ -42,6 +42,7 @@ function init(){
 	for(var y = 0; y <= 5; y++){
 		for(var x = 0; x <= 7; x++){
 			var new_block = new block(85 + x*(BLOCK_WIDTH),50+ y*(BLOCK_HEIGHT));
+			new_block.Set_Color((180/5)*y,(180/5)*y,(180/5)*y);
 			my_block.push(new_block);
 		}
 	}
@@ -87,11 +88,20 @@ function block(x,y){
 }
 
 block.prototype.Draw = function(){
+	ctx.fillStyle = this.color;
 	ctx.fillRect(this.x - (this.width/2),this.y - (this.height/2),this.width,this.height);
+
+	ctx.beginPath();
+	ctx.moveTo(this.x-this.width/2,this.y-this.height/2);
+	ctx.lineTo(this.x-this.width/2,this.y+this.height/2);
+	ctx.lineTo(this.x+this.width/2,this.y+this.height/2);
+	ctx.lineTo(this.x+this.width/2,this.y-this.height/2);
+	ctx.lineTo(this.x-this.width/2,this.y-this.height/2);
+	ctx.stroke();
 
 }
 block.prototype.Set_Color = function (red,green,blue){
-
+	this.color = 'rgb('+red+','+green+',' +blue+')';
 }
 block.prototype.Collision = function (ball){
 	if(this.x - (this.width/2) <= ball.x && this.x + (this.width/2) >= ball.x && this.y-(this.height/2) >= ball.y && this.y-(this.height/2) <= ball.y+ball.size){
@@ -131,6 +141,7 @@ bar.prototype.Move = function(){
 	if(this.x + (this.size/2) > canvas.width) this.x = canvas.width - (this.size/2);
 }
 bar.prototype.Draw = function(){
+	ctx.fillStyle = 'rgb(0,0,0)';
 	ctx.fillRect(this.x - (this.size/2), this.y, this.size, 5);
 }
 bar.prototype.Collision = function(ball){
