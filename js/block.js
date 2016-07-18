@@ -2,6 +2,13 @@ document.addEventListener('keydown', KeyDownFunc);
 document.addEventListener('keyup', KeyUpFunc);
 window.addEventListener('load',init);
 
+document.addEventListener("DOMContentLoaded", function(){
+	document.getElementById('canvas').addEventListener('touchstart', onDown, false);
+});
+document.addEventListener("DOMContentLoaded", function(){
+	document.getElementById('canvas').addEventListener('touchend', onUp, false);
+});
+
 //---------------------------------------------------------//
 //----------------------グローバル変数-----------------------//
 //---------------------------------------------------------//
@@ -16,14 +23,17 @@ var canvas;
 var ctx;
 
 var key = new Array(256);
-var KEY_LEFT = 39;
-var KEY_RIGHT =37;
+var KEY_RIGHT = 39;
+var KEY_LEFT =37;
 
 var my_bar;
 var my_ball;
 var my_block = [];
 var SPEED = 2;
 var BALL_SPEED = 8;
+var left_touch = false;
+var right_touch = false;
+
 //---------------------------------------------------------//
 //----------------------メインループ------------------------//
 //---------------------------------------------------------//
@@ -37,7 +47,7 @@ function init(){
 
 	for(var i = 0; i < key.length; i++) key[i] = 0;
 
-	my_bar = new bar(225,400,60);
+		my_bar = new bar(225,400,60);
 	my_ball = new ball(200,350,5);
 
 	for(var y = 0; y <= 5; y++){
@@ -120,7 +130,7 @@ block.prototype.Collision = function (ball){
 		ball.x = this.x + (this.width/2) + ball.size;
 		this.render = false;
 	}
-		if(this.y - (this.height/2) <= ball.y && this.y + (this.height/2) >= ball.y && this.x-(this.width/2) >= ball.x && this.x-(this.width/2) <= ball.x+ball.size){
+	if(this.y - (this.height/2) <= ball.y && this.y + (this.height/2) >= ball.y && this.x-(this.width/2) >= ball.x && this.x-(this.width/2) <= ball.x+ball.size){
 		ball.vel.x *= -1;
 		ball.x = this.x - (this.width/2) - ball.size;
 		this.render = false;
@@ -134,8 +144,8 @@ function bar(x,y,size){
 	this.speed = SPEED;
 }
 bar.prototype.Move = function(){
-	if(key[KEY_RIGHT]) this.x -= this.speed;
-	if(key[KEY_LEFT])  this.x += this.speed;
+	if(key[KEY_LEFT]||left_touch) this.x -= this.speed;
+	if(key[KEY_RIGHT]||right_touch)  this.x += this.speed;
 
 	//画面外に出たら元に戻す
 	if(this.x - (this.size/2) < 0) this.x = this.size/2;
@@ -150,7 +160,11 @@ bar.prototype.Collision = function(ball){
 		ball.vel.y *= -1;
 		ball.y = this.y - ball.size;
 		ball.vel.x += (ball.x-this.x)/40;
-		ball.vel.y = (ball.vel.y/Math.abs(ball.vel.y))*Math.sqrt(BALL_SPEED-(ball.vel.x*ball.vel.x));
+		if(BALL_SPEED-(ball.vel.x*ball.vel.x)>0){
+			ball.vel.y = (ball.vel.y/Math.abs(ball.vel.y))*Math.sqrt(BALL_SPEED-(ball.vel.x*ball.vel.x));
+		}else{
+			ball.vel.y = (ball.vel.y/Math.abs(ball.vel.y))*Math.sqrt(0.5);
+		}
 	}
 }
 
@@ -199,5 +213,23 @@ function KeyUpFunc(e){
 	for(var i = 0; i < 256; i++)
 		key[i] = 0;
 }
+function onDown(e){
+
+	for (var i = 0; i < e.touches.length; i++) {
+		var touch = e.touches[i];
+		console.log(touch.pageX);
+		if(touch.pageX < WIDTH/2+canvas.offsetLeft){
+			left_touch = true;
+		}else{
+			right_touch = true;
+		}
+	}
+
+}
+function onUp(e){
+	right_touch = false;
+	left_touch = false;
+}
+
 //---------------------------------------------------------//
 //---------------------------------------------------------//
