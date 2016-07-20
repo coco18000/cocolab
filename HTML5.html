@@ -9,14 +9,12 @@
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssgrids/cssgrids-min.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/aquarium.js"></script>
+    <script type="text/javascript" src="js/study.js"></script>
 
     <!--<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />-->
-    <link rel="stylesheet" href="./css/index.css" media="screen, print" title="default style" type="text/css" />
-    <link rel="stylesheet" href="./css/footer.css" media="screen, print" title="default style" type="text/css" />
+    <link rel="stylesheet" href="./css/study.css" media="screen, print" title="default style" type="text/css" />
     <link rel="stylesheet" href="./css/header.css" media="screen, print" title="default style" type="text/css" />
+    <link rel="stylesheet" href="./css/footer.css" media="screen, print" title="default style" type="text/css" />
     <title>CocoLab.</title>
 </head>
 <body id="topPage">
@@ -24,10 +22,10 @@
         <header>
             <div id="menu">
                 <ul>
-                    <li><a href="index.html" class="now">TOP</a></li>
+                    <li><a href="index.html">TOP</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Research</a></li>
-                    <li><a href="study.html">Study</a></li>
+                    <li><a href="study.html" class="now">Study</a></li>
                     <li><a href="link.html">Link</a></li>
                     <li><a href="contact.html" id="last">Contact</a></li>
                 </ul>
@@ -35,7 +33,9 @@
 
             <div id="bread">
                 <ol>
-                <li class="current"><a href="index.html">TOP</a></li>
+                <li class="visited"><a href="index.html">TOP</a></li>
+                <li class="visited"><a href="study.html">Study</a></li>
+                <li class="current"><a href="#">HTML+CSS</a></li>
                 </ol>
             </div><!--bread-->
 
@@ -50,55 +50,8 @@
 
 
         <div id="main">
-            <div id="top_img">
-                <h1>Welcom to my Laboratory!</h1>
-                <div id="canvas">
-                    <canvas id="Aquarium"></canvas>
-                </div><!--canvas-->
-            </div><!--top_img-->
+            <h1>Study</h1>
 
-
-            <div id="games">
-                <h2>Games</h2>
-                <div id="gicon">
-                    <ul>
-                        <li><a href="block.html"><img src="img/block.png" width="128" height="128" alt="block break"></a></li>
-                        <li><a href="#">coming soon...</a></li>
-                        <li><a href="#">coming soon...</a></li>
-                        <li><a href="#">coming soon...</a></li>
-                    </ul>
-                    <a href="#">and more...</a>
-                </div><!--gicon-->
-            </div><!--games-->
-
-            <div id="update">
-                <div id="tab">
-                    <div id="update_menu">
-                        <h3>Update History</h3>
-                        <ul id="tabs">
-                            <li><a href="#tab01">All Update</a></li>
-                            <li><a href="#tab02">Research Update</a></li>
-                            <li><a href="#tab03">Study Update</a></li>
-                        </ul>
-                    </div><!--update_menu-->
-                </div><!--tab-->
-                <div id="message_window">
-                    <div id="messages">
-                        <div id="tab01" class="panel">
-                        <p>2016/07/19:Studyページ開設</p>
-                            <p>2016/07/18:Aboutページ開設</p>
-                            <p>2016/07/16:JSで作るブロック崩し</p>
-                            <p>2016/07/15:WEBサイト開設</p>
-                        </div><!--tab01-->
-                        <div id="tab02" class="panel">
-                            <p>2016/07/16:JSで作るブロック崩し</p>
-                        </div><!--tab02-->
-                        <div id="tab03" class="panel">
-                            <p>2016/07/19:Studyページ開設</p>
-                        </div><!--tab03-->
-                    </div><!--messages-->
-                </div><!--message_window-->
-            </div><!--update-->
         </div><!--main-->
 
 
