@@ -1,0 +1,134 @@
+body{
+	width:1000px;
+	margin:0 auto;
+}
+
+#main{
+	margin:0 auto;
+	margin-top: 30px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	width:960px;
+	height:700px;
+}
+
+#main h1{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+#programs{
+	width: 800px;
+	height:auto;
+	margin:0 auto;
+	margin-bottom: 10px;
+	//border:solid 1px black;
+}
+#picon{
+	margin:0 auto;
+	margin-top:30px;
+}
+
+#programs h2{
+	font-size: 20px;
+	text-align: center;
+	width:180px;
+	padding-bottom: 10px;
+	margin-left:-40px;
+	border-bottom: solid 1px black
+}
+
+#programs li{
+	position:relative;
+	display: block;
+	float: left;
+	width: 33%;
+	height:180px;
+}
+
+#programs li a{
+	margin:0 auto;
+	margin-top:25px;
+	color: black;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 128px;
+	height:128px;
+}
+
+
+#programs #picon img{
+}
+
+.no_imp img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: opacity(5%);
+	filter: opacity(5%);
+}
+.no_imp p{
+	position: absolute;
+	font-size: 20px;
+	top:75px;
+}
+
+#programs a:hover>img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: opacity(30%);
+	filter: opacity(30%);
+
+	-webkit-transform:scaleX(-1);
+	-moz-transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-o-transform:scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-webkit-animation: spin 2s ease 0s infinite normal;
+}
+@-webkit-keyframes spin{
+	0%{
+		-webkit-transform:scaleX(1);
+	}
+	50%{
+		-webkit-transform:scaleX(-1);
+	}
+	100%{
+		-webkit-transform:scaleX(1);
+	}
+}
+.lang {
+    position:relative;
+    overflow:hidden;
+}
+.inner {
+    padding:10px;
+}
+.explain {
+    position:absolute;
+    left:0;
+    top:0;
+    display:none;
+    width:99%;
+    height:99%;
+    background-color: rgba(220,220,220,0.4);
+    border:solid 1px #ccc;
+    border-radius: 10px;
+
+    color: #505050;
+}
+.explain h3{
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 22px;
+}
+.explain p{
+	padding-left: 6px;
+	padding-right: 6px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 18px;
+}

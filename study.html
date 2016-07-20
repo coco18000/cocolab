@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssbase/cssbase-min.css">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssfonts/cssfonts-min.css">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssgrids/cssgrids-min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/study.js"></script>
 
     <!--<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />-->
-    <link rel="stylesheet" href="./css/about.css" media="screen, print" title="default style" type="text/css" />
-    <link rel="stylesheet" href="./css/footer.css" media="screen, print" title="default style" type="text/css" />
+    <link rel="stylesheet" href="./css/study.css" media="screen, print" title="default style" type="text/css" />
     <link rel="stylesheet" href="./css/header.css" media="screen, print" title="default style" type="text/css" />
+    <link rel="stylesheet" href="./css/footer.css" media="screen, print" title="default style" type="text/css" />
     <title>CocoLab.</title>
 </head>
 <body id="topPage">
@@ -21,9 +23,9 @@
             <div id="menu">
                 <ul>
                     <li><a href="index.html">TOP</a></li>
-                    <li><a href="about.html" class="now">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Research</a></li>
-                    <li><a href="study.html">Study</a></li>
+                    <li><a href="study.html" class="now">Study</a></li>
                     <li><a href="link.html">Link</a></li>
                     <li><a href="contact.html" id="last">Contact</a></li>
                 </ul>
@@ -40,35 +42,77 @@
 
 
         <div id="main">
-            <div id="top_img">
-                <h1>Welcom to my Laboratory!</h1>
+            <h1>Study</h1>
 
-                <h2>このWEBサイトについて</h2>
-                <p>このWEBサイトでは、個人作成したゲーム、WEBアプリケーション等を公開しております。</p>
-                <p>また、ゲーム・WEBアプリ・WEBサイト開発のための学習ページも公開しております。</p>
-                <p>サイト内のすべてのページはPC観覧推奨です。</p>
-                <p>一部ページではJavaScriptを用いているため、ブラウザのJavaScriptを有効にすることを推奨しています</p>
-                <h2>サイト案内</h2>
-                <h3>Research</h3>
-                <p>個人作成したゲーム・WEBアプリケーション等のプログラム作品を公開しております。</p>
-                <h3>Study</h3>
-                <p>プログラミングの学習ページを公開しております。</p>
-                <h3>Activity</h3>
-                <p>活動を行っているサイトにリンクしています。</p>
-                <h2>著作権について</h2>
-                <p>ゲーム作品等で、多数のフリー素材を用いています。</p>
-                <p>それらの素材の著作権は、各素材の制作者様にあります。</p>
-                <p>制作元の情報は、各作品内の「素材」ファイルをご覧ください。</p>
-                </br>
-                <p>それ以外のプログラム素材等については、特に記載がない限り著作権フリーです。</p>
-                <p>どうぞご自由にご利用ください。</p>
-                <h2>リンクについて</h2>
-                <p>トップページの他、すべてのページがリンクフリーです。</p>
-                <p>ただし、URLが変更される可能性があります。</p>
-                <h2>コンタクト</h2>
-                <p><a href="https://twitter.com/_cocoLAB">Twitter</a>にて、ご連絡お願い致します。</p>
-            </div><!--top_img-->
+            <div id="programs">
+                <h2>Languages</h2>
+                <div id="picon">
+                    <ul>
+                        <li class = "no_imp">
+                            <a href="#">
+                                <img src="img/ccpp.png" width="128" height="128" alt="C,C++">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/cs.png" width="128" height="128" alt="C#">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/java.png" width="128" height="128" alt="Java">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class = "lang">
+                            <a href="#">
+                                <img src="img/js.png" width="128" height="128" alt="JavaScript">
+                                <div class="explain">
+                                <h3>Java Script</h3>
+                                    <p>WEBサイト等で使われる言語「JavaScript」について、作法や文法等を学びます。</p>
+                                    <p>最終的にHTML5のcanvasを利用して、簡単なゲームを作成します。</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/jquery.png" width="128" height="128" alt="jQuery">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/ruby.png" width="128" height="128" alt="Ruby">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/rails.png" width="128" height="128" alt="Ruby on Rails">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/html5.png" width="128" height="128" alt="HTML5">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                        <li class="no_imp">
+                            <a href="#">
+                                <img src="img/go.png" width="128" height="128" alt="GO">
+                                <p>coming soon...</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--picon-->
+            </div><!--programs-->
+
         </div><!--main-->
+
+
 
         <footer>
             <div id="contents">
@@ -140,7 +184,7 @@
             </div><!--SNS-->
             <div id="copyright"><p>COPYRIGHT © CocoLab. ALL RIGHTS RESERVED.</p></div><!--copyright--> 
         </footer>
-        
+
     </div> <!-- page -->
 </body>
 </html>
