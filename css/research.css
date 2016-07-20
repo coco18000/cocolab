@@ -1,0 +1,27 @@
+body{
+	width:1000px;
+	margin:0 auto;
+}
+
+#main{
+	margin:0 auto;
+	margin-top: 30px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	width:960px;
+	height:auto;
+}
+
+#main h1{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+#main h2{
+	font-size: 20px;
+	text-align: center;
+	width:220px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px black
+}
