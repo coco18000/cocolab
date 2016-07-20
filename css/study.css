@@ -24,7 +24,6 @@ body{
 	height:auto;
 	margin:0 auto;
 	margin-bottom: 10px;
-	//border:solid 1px black;
 }
 #picon{
 	margin:0 auto;
@@ -100,7 +99,7 @@ body{
 		-webkit-transform:scaleX(1);
 	}
 }
-.lang {
+.tips {
     position:relative;
     overflow:hidden;
 }
