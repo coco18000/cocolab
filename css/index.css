@@ -155,12 +155,14 @@ body{
 }
 
 #update #message_window{
+
 	float:right;
 	width:69%;
 	height :250px;
 }
 
 #update #messages{
+	overflow: scroll;
 	height:200px;
 	width: 90%;
 	margin:0 auto;
