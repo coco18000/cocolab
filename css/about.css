@@ -24,7 +24,8 @@ body{
 	font-size: 20px;
 	border-left:solid 5px black;
 	border-bottom: solid 1px black;
-	margin-top: 40px;
+	margin-top: 50px;
+	width:480px;
 
 }
 #main h3{
