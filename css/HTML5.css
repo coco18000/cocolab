@@ -41,8 +41,7 @@ section>p{
 
 .browser{
 	position: relative;
-	top:7px;
-	margin: 15px 0px 15px 0px;
+	margin: 20px 0px 20px 0px;
 	border-radius: 7px;
 	width:auto;
 	padding: 17px 7px 2px 7px;
@@ -62,7 +61,7 @@ section>p{
 }
 .mycode{
 	position: relative;
-	margin: 15px 0px 15px 0px;
+	margin: 20px 0px 20px 0px;
 	border-radius: 7px;
 	width:auto;
 	padding: 17px 7px 2px 7px;
@@ -77,5 +76,25 @@ section>p{
 	border:solid 1px #808080;
 	padding:3px;
 	z-index: 1;
+}
 
+.question{
+	position: relative;
+	margin: 20px 0px 20px 0px;
+	border-radius: 7px;
+	width:auto;
+	padding: 17px 7px 2px 7px;
+	border:solid 1px #808080;
+	box-shadow:5px 7px;
+	min-height: 150px;
+
+}
+.question>h2{
+	background-color: white;
+	position: absolute;
+	top:-29px;
+	left:16px;
+	border:solid 1px #808080;
+	padding:3px;
+	z-index: 1;
 }
