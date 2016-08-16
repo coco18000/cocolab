@@ -98,3 +98,15 @@ section>p{
 	padding:3px;
 	z-index: 1;
 }
+
+#answer{
+	display: none;
+}
+
+.question>.lang{
+	display:block;
+	border:solid 1px black;
+}
+.question>.lang:hover{
+	background-color: black;
+}
