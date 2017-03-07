@@ -1,6 +1,4 @@
-body{
 
-}
 #page{
 	width: 1000px;
 	margin: 0 auto;
@@ -20,7 +18,7 @@ body{
 }
 #top_img h1{
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 #top_img #canvas{
 	margin-top:20px;
@@ -37,7 +35,7 @@ body{
 	//border:solid 1px black;
 }
 #games h2{
-	font-size: 20px;
+	font-size: 27px;
 	text-align: center;
 	width:180px;
 	padding-bottom: 10px;
@@ -52,9 +50,9 @@ body{
 	width: 128px;
 	height:128px;
 	border:solid 1px black;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 }
 
 #games li a{
@@ -71,7 +69,7 @@ body{
 	width:90px;
 	height:32px;
 	float:left;
-	font-size: 17px;
+	font-size: 18px;
 	color: black;
 	text-align: center;
 	text-decoration: none;
@@ -82,9 +80,12 @@ body{
 	text-decoration:underline;
 }
 #games #gicon img{
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+#games a{
+	font-size: 15px;
 }
 
 #update{
@@ -105,7 +106,7 @@ body{
 	margin:0 auto;
 }
 #tab #update_menu h3{
-	font-size: 20px;
+	font-size: 23px;
 	margin:0 auto;
 	text-align: center;
 	width:180px;
@@ -113,6 +114,11 @@ body{
 	padding-top: 10px;
 	border-bottom: solid 1px black
 }
+
+#update p{
+	font-size: 15px;
+}
+
 #tab #update_menu li{
 	list-style: none;
 }
@@ -127,7 +133,7 @@ body{
 	height: 50px;
 }
 #tabs a{
-	font-size: 16px;
+	font-size: 19px;
 	width: auto;
 	height: 40px;
 	color: black;

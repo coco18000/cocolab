@@ -1,0 +1,9 @@
+@font-face {
+   font-family: Makinas;
+   src: url('../font/Makinas-Scrap-5.otf') format("opentype");
+}
+
+body{
+	font-family: Makinas;
+}
+
